@@ -1,5 +1,5 @@
 CC=mpicc
-CFLAGS=-Wall -lm
+CFLAGS=-Wall -cc=icc
 
 scatterv : scatterv.c
 	$(CC) -o $@ $< $(CFLAGS)

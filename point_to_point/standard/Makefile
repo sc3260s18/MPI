@@ -1,5 +1,5 @@
 CC=mpicc
-CFLAGS=-Wall
+CFLAGS=-Wall -cc=icc
 
 standard : standard.c
 	$(CC) -o $@ $< $(CFLAGS)

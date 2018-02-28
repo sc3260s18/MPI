@@ -1,5 +1,5 @@
 CC=mpicc
-CFLAGS=-Wall -lm
+CFLAGS=-Wall -cc=icc
 
 scatter : scatter.c
 	$(CC) -o $@ $< $(CFLAGS)

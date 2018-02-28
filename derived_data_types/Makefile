@@ -1,5 +1,5 @@
 CC=mpicc
-CFLAGS=-Wall
+CFLAGS=-Wall -cc=icc
 
 student : student.c
 	$(CC) -o $@ $< $(CFLAGS)

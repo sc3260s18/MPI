@@ -1,5 +1,5 @@
 CC=mpicc
-CFLAGS=-Wall
+CFLAGS=-Wall -cc=icc
 
 nonblocking : nonblocking.c
 	$(CC) -o $@ $< $(CFLAGS)

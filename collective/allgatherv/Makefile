@@ -1,5 +1,5 @@
 CC=mpicc
-CFLAGS=-Wall
+CFLAGS=-Wall -cc=icc
 SRC=allgatherv.c
 EXE=allgatherv
 

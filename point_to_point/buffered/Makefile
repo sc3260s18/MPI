@@ -1,5 +1,5 @@
 CC=mpicc
-CFLAGS=-Wall
+CFLAGS=-Wall -cc=icc
 
 buffered : buffered.c
 	$(CC) -o $@ $< $(CFLAGS)

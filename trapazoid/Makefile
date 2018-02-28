@@ -1,5 +1,5 @@
 CC=mpicc
-CFLAGS=-Wall
+CFLAGS=-Wall -cc=icc
 SRC=mpi_trap.c
 EXE=mpi_trap
 

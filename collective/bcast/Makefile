@@ -1,5 +1,5 @@
 CC=mpicc
-CFLAGS=-Wall
+CFLAGS=-Wall -cc=icc
 
 bcast : bcast.c
 	$(CC) -o $@ $< $(CFLAGS)

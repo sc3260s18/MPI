@@ -1,5 +1,5 @@
 CC=mpicc
-CFLAGS=-Wall
+CFLAGS=-Wall -cc=icc
 SRC=mpi_hello.c
 EXE=mpi_hello
 

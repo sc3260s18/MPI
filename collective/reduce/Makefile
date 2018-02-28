@@ -1,5 +1,5 @@
 CC=mpicc
-CFLAGS=-Wall
+CFLAGS=-Wall -cc=icc
 
 reduce : reduce.c
 	$(CC) -o $@ $< $(CFLAGS)
