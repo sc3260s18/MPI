@@ -8,16 +8,16 @@ to run these examples:
 ## Running interatively from gateway (outside SLURM)
 
 You should only run MPI jobs from a gateway for very short tests. You can
-use the ```mpirun``` command (after loading Intel and IntelMPI libraries)
+use the ```mpiexec``` command (after loading Intel and IntelMPI libraries)
 like so:
 
-	mpirun -n 2 ./mpi_executable
+	mpiexec -n 2 ./mpi_executable
 
 This will run your MPI-supported executable with 2 processes.
 
 ## Running within SLURM
 
-SLURM has its own MPI job management command called ```srun```, which you can think of as ```mpirun```. With ```srun``` you do not need to specify the number of processes you would like to launch, SLURM just launches the program with the maximum allowed process for your job allocation (which is specified in the script that you submit to SLURM).
+SLURM has its own MPI job management command called ```srun```, which you can think of as ```mpiexec```. With ```srun``` you do not need to specify the number of processes you would like to launch, SLURM just launches the program with the maximum allowed process for your job allocation (which is specified in the script that you submit to SLURM).
 
 ## Order of examples:
 
