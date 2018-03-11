@@ -7,7 +7,7 @@
  * Compile:    
  *    mpicc -g -Wall -o mpi_hello mpi_hello.c
  * Usage:        
- *    mpirun -n <number of processes> ./mpi_hello
+ *    mpiexec -n <number of processes> ./mpi_hello
  *
  * Input:      
  *    None

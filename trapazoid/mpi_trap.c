@@ -8,7 +8,7 @@
  *           using the trapezoidal rule and n trapezoids.
  *
  * Compile:  mpicc -g -Wall -o mpi_trap mpi_trap.c
- * Run:      mpirun -n <number of processes> ./mpi_trap
+ * Run:      mpiexec -n <number of processes> ./mpi_trap
  *
  * Algorithm:
  *    1.  Each process calculates "its" interval of
