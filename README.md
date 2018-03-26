@@ -8,12 +8,21 @@ to run these examples:
 ## Running interatively from gateway (outside SLURM)
 
 You should only run MPI jobs from a gateway for very short tests. You can
-use the ```mpiexec``` command (after loading Intel and IntelMPI libraries)
+use the ```mpirun``` command (after loading Intel and IntelMPI libraries)
 like so:
 
-	mpiexec -n 2 ./mpi_executable
+	mpirun -n 2 ./mpi_executable
 
 This will run your MPI-supported executable with 2 processes.
+
+Before running the command above, you will need to unset an environment variable
+that causes issues for interactive jobs:
+
+	unset I_MPI_PMI_LIBRARY
+
+You should type this command once before running any Intel-compiled MPI programs,
+but you do not need to type this command every time you use `mpirun`, only once after
+initially logging in.
 
 ## Running within SLURM
 
